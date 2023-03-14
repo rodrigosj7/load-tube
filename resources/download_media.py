@@ -9,3 +9,13 @@ def download_media(links,path):
         title = yt.title
         
     return title
+
+def download_media_video(links, path):
+    for link in links:
+        print('Baixando...' + link)
+        yt = YouTube(link)
+        ys = yt.streams.filter(only_audio=True).first()
+        ys.download(path)
+        title = yt.title
+        
+    return title
