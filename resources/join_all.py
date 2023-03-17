@@ -2,14 +2,14 @@ from recept_links import recept_links
 from treating_link import capture_link
 from mp4_to_mp3 import convert_mp4_for_mp3
 from mp4_to_wav import convert_mp4_for_wav
-from download_media import download_media
+from download_media import download_media, download_media_video
 
 PATH_VIDEOS = './downloads/videos'
 PATH_MUSICS = './downloads/musics'
 
 def download_format_mp4():
 	all_links = recept_links()
-	download_media(capture_link(all_links),PATH_VIDEOS)
+	download_media_video(capture_link(all_links),PATH_VIDEOS)
 
 def download_format_mp3():
 	all_links = recept_links()

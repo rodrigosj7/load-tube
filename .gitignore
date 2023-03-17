@@ -1,3 +1,4 @@
+ 
 __pycache__/
 downloads/
 
@@ -8,3 +9,4 @@ env/
 venv/
 ENV/
 virtualenviroment
+venv
